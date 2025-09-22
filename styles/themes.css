@@ -1,0 +1,73 @@
+:root.theme-light {
+  --themes-mainColor: #ffffff;
+  --accent-color: #000000;
+  --background-image: repeating-linear-gradient(
+      to left,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to top, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to top, #e7e7e7 0.01%, #1a1a1a);
+  --color-mixing: #ffffff;
+  --color-text: #000000; /*цвет текста*/
+  --countour-svg: #000000; /*ЦВЕТ КОНТУРА ВЫНЕСИТЕ В ПЕРЕМЕННУ ПОТОМУ ЧТО ОН МЕНЯЕТСЯ В СВЕТЛОЙ И ТЕМНОЙ ТЕМАХ*/
+  --filling-svg: #ff0000; /*ЦВЕТ ЗАЛИВКИ SVG ОН ОДИН ДЛЯ ВСЕХ*/
+  --floppy-button: #000000;
+  --box-shadow: rgba(0, 0, 0, 1);
+  --border: 2px solid var(--accent-color, #000000);
+  --thickness-main-text: 400; /*толщина основного тескста*/
+  --card-header-thickness: 700; /*толщина заголовка карточки*/
+  --text-stroke-color: #ffffff;
+  --dialog-backdrop: #000000;
+  --favicon-color: #000000;
+}
+
+:root.theme-dark {
+  --themes-mainColor: #000000;
+  --accent-color: #00cc14;
+  --background-image: repeating-linear-gradient(
+      to left,
+      #000000 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to top, #004306 0 2px, transparent 2px 4px),
+    linear-gradient(to top, #007f0c, #004306);
+  --countour-svg: #00cc14; /*ЦВЕТ КОНТУРА ВЫНЕСИТЕ В ПЕРЕМЕННУ ПОТОМУ ЧТО ОН МЕНЯЕТСЯ В СВЕТЛОЙ И ТЕМНОЙ ТЕМАХ*/
+  --filling-svg: #ff0000; /*ЦВЕТ ЗАЛИВКИ SVG ОН ОДИН ДЛЯ ВСЕХ*/
+  --color-text: #00cc14; /*цвет текста*/
+  --color-mixing: #00cc14;
+  --floppy-button: #00cc14;
+  --box-shadow: #00cc14;
+  --border: 2px solid var(--accent-color, #00cc14);
+  --thickness-main-text: 465; /*толщина основного тескста*/
+  --card-header-thickness: 785; /*толщина заголовка карточки*/
+  --text-stroke-color: #000000;
+  --dialog-backdrop: #000000;
+  --favicon-color: #00cc14;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --themes-mainColor: #000000;
+    --accent-color: #00cc14;
+    --background-image: repeating-linear-gradient(
+        to left,
+        #000000 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to top, #004306 0 2px, transparent 2px 4px),
+      linear-gradient(to top, #007f0c, #004306);
+    --countour-svg: #00cc14; /*ЦВЕТ КОНТУРА ВЫНЕСИТЕ В ПЕРЕМЕННУ ПОТОМУ ЧТО ОН МЕНЯЕТСЯ В СВЕТЛОЙ И ТЕМНОЙ ТЕМАХ*/
+    --filling-svg: #ff0000; /*ЦВЕТ ЗАЛИВКИ SVG ОН ОДИН ДЛЯ ВСЕХ*/
+    --color-text: #00cc14; /*цвет текста*/
+    --color-mixing: #00cc14;
+    --floppy-button: #00cc14;
+    --box-shadow: #00cc14;
+    --border: 2px solid var(--accent-color, #00cc14);
+    --thickness-main-text: 465; /*толщина основного тескста*/
+    --card-header-thickness: 785; /*толщина заголовка карточки*/
+    --text-stroke-color: #000000;
+    --dialog-backdrop: #000000;
+    --favicon-color: #00cc14;
+  }
+}

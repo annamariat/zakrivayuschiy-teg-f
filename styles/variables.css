@@ -1,1 +1,32 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --main-font-Inter: Inter; /*вариативный шрифт*/
+  --accent-font-PressStart2P: PressStart2P;
+  --cursor: url(../images/cursor.png), auto;
+  --title-size-mobile: clamp();
+  --title-size-desktop: clamp();
+  --header-inline-mobile: 50%;
+  --header-inline-desktop: 100%;
+  --themes-mainColor: #ffffff;
+  --accent-color: #000000;
+  --background-image: repeating-linear-gradient(
+      to left,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to top, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to top, #e7e7e7 0.01%, #1a1a1a);
+  --color-mixing: #ffffff;
+  --color-text: #000000; /*цвет текста*/
+  --countour-svg: #000000; /*ЦВЕТ КОНТУРА ВЫНЕСИТЕ В ПЕРЕМЕННУ ПОТОМУ ЧТО ОН МЕНЯЕТСЯ В СВЕТЛОЙ И ТЕМНОЙ ТЕМАХ*/
+  --filling-svg: #ff0000; /*ЦВЕТ ЗАЛИВКИ SVG ОН ОДИН ДЛЯ ВСЕХ*/
+  --floppy-button: #000000;
+  --box-shadow: rgba(0, 0, 0, 1);
+  --border: 2px solid var(--accent-color, #000000);
+  --thickness-main-text: 400; /*толщина основного тескста*/
+  --card-header-thickness: 700; /*толщина заголовка карточки*/
+  --text-stroke-color: #ffffff;
+  --dialog-backdrop: #000000;
+  --favicon-color: #000000;
+}
