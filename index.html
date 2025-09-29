@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
-    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="./fonts/fonts.css" >
+    <link rel="icon" href="./images/favicon.ico" sizes="any" >
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" >
+    <link rel="apple-touch-icon" href="./images/favicon.png" >
+    <link rel="stylesheet" href="./styles/variables.css" >
+    <link rel="stylesheet" href="./styles/globals.css" >
+    <link rel="stylesheet" href="./styles/style.css" >
+    <link rel="stylesheet" href="./styles/animations.css" >
+    <link rel="stylesheet" href="./styles/themes.css" >
+    <meta name="color-scheme" content="light dark" >
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header page__section page__header">
+    <header class="header page__section">
       <div class="logo-group">
-        <span class="header__logo">&lt;/HTML&gt;</span>
-        <h1 class="header__title">Закрывающий тег</h1>
+        <h1 class="header__title">&lt;/HTML&gt;</h1>
+        <p class="header__subtitle">Закрывающий тег</p>
       </div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
@@ -49,22 +49,22 @@
       </nav>
     </header>
 
-    <main class="content">
-      <section class="post-section">
+    <main class="content page__section">
+      <article class="post-section">
         <h2 class="post-title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
         <ul class="post-content__list">
           <li class="post-content__item">
-            <article class="post-card">
+            <div class="post-card">
               <div class="post-card-container hue-animate">
-                <span class="label">&lt;/HTML&gt;</span>
+                <span class="label" aria-hidden="true">&lt;happy&gt;</span>
                 <img
                   class="images-card image-card-first"
                   src="images/heart.jpg"
                   alt="Красный декоративный светильник в виде сердца выполненный в стиле майнкрафт стоящий на деревянном столе"
                   loading="lazy"
-                />
+                >
               </div>
 
               <div class="card-text-content">
@@ -79,10 +79,10 @@
                 </p>
               </div>
               <div class="card__controls">
-                <button class="card__icon-button" aria-labelledby="like-button">
+                <button class="card__icon-button">
                   <svg
                     class="like-icon"
-                    widht="39"
+                    width="39"
                     height="36"
                     viewBox="0 0 39 36"
                     fill="none"
@@ -96,12 +96,12 @@
                       />
                       <path
                         class="main-body"
-                        fill="none"
+                        fill="transparent"
                         d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                       />
                       <path
                         class="core"
-                        fill="none"
+                        fill="transparent"
                         d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                       />
                     </g>
@@ -117,23 +117,23 @@
                   <span class="button__text">Like</span>
                 </button>
               </div>
-            </article>
+            </div>
           </li>
         </ul>
-      </section>
-      <section class="post-section">
+      </article>
+      <article class="post-section">
         <h2 class="post-title">1 спринт: Я — чистый лист</h2>
         <ul class="post-content__list">
           <li class="post-content__item">
-            <article class="post-card">
+            <div class="post-card">
               <div class="post-card-container">
-                <span class="label">&lt;/HTML&gt;</span>
+                <span class="label" aria-hidden="true">&lt;I can&gt;</span>
                 <img
                   class="images-card image-card-second"
                   src="images/heart.jpg"
                   alt="Красный декоративный светильник в виде сердца выполненный в стиле майнкрафт стоящий на деревянном столе"
                   loading="lazy"
-                />
+                >
               </div>
               <div class="card-text-content">
                 <p class="card-text-content__paragraph">
@@ -145,14 +145,15 @@
                   если я не справлюсь?
                 </p>
                 <p class="card-text-content__paragraph">
-                  В этот момент в моей голове - Добро пожаловать в пространство вопросов.
+                  В этот момент в моей голове - Добро пожаловать в пространство
+                  вопросов.
                 </p>
               </div>
               <div class="card__controls">
-                <button class="card__icon-button" aria-labelledby="like-button">
+                <button class="card__icon-button">
                   <svg
                     class="like-icon"
-                    widht="39"
+                    width="39"
                     height="36"
                     viewBox="0 0 39 36"
                     fill="none"
@@ -166,12 +167,12 @@
                       />
                       <path
                         class="main-body"
-                        fill="none"
+                        fill="transparent"
                         d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                       />
                       <path
                         class="core"
-                        fill="none"
+                        fill="transparent"
                         d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                       />
                     </g>
@@ -187,23 +188,23 @@
                   <span class="button__text">Like</span>
                 </button>
               </div>
-            </article>
+            </div>
           </li>
         </ul>
-      </section>
-      <section class="post-section">
+      </article>
+      <article class="post-section">
         <h2 class="post-title">1 спринт: А если не получится?</h2>
         <ul class="post-content__list">
           <li class="post-content__item">
-            <article class="post-card">
+            <div class="post-card">
               <div class="post-card-container">
-                <span class="label">&lt;/HTML&gt;</span>
+                <span class="label" aria-hidden="true">&lt;pride&gt;</span>
                 <img
                   class="images-card image-card-third"
                   src="images/heart.jpg"
                   alt="Красный декоративный светильник в виде сердца выполненный в стиле майнкрафт стоящий на деревянном столе"
                   loading="lazy"
-                />
+                >
               </div>
 
               <div class="card-text-content">
@@ -215,14 +216,15 @@
                 </p>
 
                 <p class="card-text-content__paragraph">
-                 Приняла для себя тактику "Лучше качественно и медленно, чем быстро и тяп ляп"!
+                  Приняла для себя тактику "Лучше качественно и медленно, чем
+                  быстро и тяп ляп"!
                 </p>
               </div>
               <div class="card__controls">
-                <button class="card__icon-button" aria-labelledby="like-button">
+                <button class="card__icon-button">
                   <svg
                     class="like-icon"
-                    widht="39"
+                    width="39"
                     height="36"
                     viewBox="0 0 39 36"
                     fill="none"
@@ -236,12 +238,12 @@
                       />
                       <path
                         class="main-body"
-                        fill="none"
+                        fill="transparent"
                         d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                       />
                       <path
                         class="core"
-                        fill="none"
+                        fill="transparent"
                         d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                       />
                     </g>
@@ -257,23 +259,23 @@
                   <span class="button__text">Like</span>
                 </button>
               </div>
-            </article>
+            </div>
           </li>
         </ul>
-      </section>
-      <section class="post-section">
+      </article>
+      <article class="post-section">
         <h2 class="post-title">2 спринт: Погоня за идеалом</h2>
         <ul class="post-content__list">
           <li class="post-content__item">
-            <article class="post-card">
+            <div class="post-card">
               <div class="post-card-container hue-animate">
-                <span class="label">&lt;/HTML&gt;</span>
+                <span class="label" aria-hidden="true">&lt;perfection&gt;</span>
                 <img
                   class="images-card image-card-fourth"
                   src="images/heart.jpg"
                   alt="Красный декоративный светильник в виде сердца выполненный в стиле майнкрафт стоящий на деревянном столе"
                   loading="lazy"
-                />
+                >
               </div>
               <div class="card-text-content">
                 <p class="card-text-content__paragraph">
@@ -284,14 +286,15 @@
                   сделать идеально, старались просто сделать.
                 </p>
                 <p class="card-text-content__paragraph">
-                 Возникло чувство  восхищения людьми которые занимаются веб-разработкой и огромное желание уметь так же...
+                  Возникло чувство восхищения людьми которые занимаются
+                  веб-разработкой и огромное желание уметь так же...
                 </p>
               </div>
               <div class="card__controls">
-                <button class="card__icon-button" aria-labelledby="like-button">
+                <button class="card__icon-button">
                   <svg
                     class="like-icon"
-                    widht="39"
+                    width="39"
                     height="36"
                     viewBox="0 0 39 36"
                     fill="none"
@@ -305,12 +308,12 @@
                       />
                       <path
                         class="main-body"
-                        fill="none"
+                        fill="transparent"
                         d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                       />
                       <path
                         class="core"
-                        fill="none"
+                        fill="transparent"
                         d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                       />
                     </g>
@@ -326,23 +329,23 @@
                   <span class="button__text">Like</span>
                 </button>
               </div>
-            </article>
+            </div>
           </li>
         </ul>
-      </section>
-      <section class="post-section">
+      </article>
+      <article class="post-section">
         <h2 class="post-title">2 спринт: О тех, кто рядом</h2>
         <ul class="post-content__list">
           <li class="post-content__item">
-            <article class="post-card">
+            <div class="post-card">
               <div class="post-card-container hue-animate">
-                <span class="label">&lt;/HTML&gt;</span>
+                <span class="label" aria-hidden="true">&lt;Love&gt;</span>
                 <img
                   class="images-card image-card-fifth"
                   src="images/heart.jpg"
                   alt="Красный декоративный светильник в виде сердца выполненный в стиле майнкрафт стоящий на деревянном столе"
                   loading="lazy"
-                />
+                >
               </div>
               <div class="card-text-content">
                 <p class="card-text-content__paragraph">
@@ -358,10 +361,10 @@
                 </p>
               </div>
               <div class="card__controls">
-                <button class="card__icon-button" aria-labelledby="like-button">
+                <button class="card__icon-button">
                   <svg
                     class="like-icon"
-                    widht="39"
+                    width="39"
                     height="36"
                     viewBox="0 0 39 36"
                     fill="none"
@@ -375,12 +378,12 @@
                       />
                       <path
                         class="main-body"
-                        fill="none"
+                        fill="transparent"
                         d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                       />
                       <path
                         class="core"
-                        fill="none"
+                        fill="transparent"
                         d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                       />
                     </g>
@@ -396,23 +399,23 @@
                   <span class="button__text">Like</span>
                 </button>
               </div>
-            </article>
+            </div>
           </li>
         </ul>
-      </section>
-      <section class="post-section">
+      </article>
+      <article class="post-section">
         <h2 class="post-title">3 спринт: Обходные стратегии</h2>
         <ul class="post-content__list">
           <li class="post-content__item">
-            <article class="post-card">
+            <div class="post-card">
               <div class="post-card-container hue-animate">
-                <span class="label">&lt;/HTML&gt;</span>
+                <span class="label" aria-hidden="true">&lt;Brilliant&gt;</span>
                 <img
                   class="images-card image-card-sixth"
                   src="images/heart.jpg"
                   alt="Красный декоративный светильник в виде сердца выполненный в стиле майнкрафт стоящий на деревянном столе"
                   loading="lazy"
-                />
+                >
               </div>
               <div class="card-text-content">
                 <p class="card-text-content__paragraph">
@@ -421,14 +424,16 @@
                   Значит, пришло время посмотреть на задачу под другим углом.
                 </p>
                 <p class="card-text-content__paragraph">
-                  Хоть я и обучалась медленно... в этом спринте моя медленность стала еще медленнее! И тогда я решила что это и есть мой другой угол.  
+                  Хоть я и обучалась медленно... в этом спринте моя медленность
+                  стала еще медленнее! И тогда я решила что это и есть мой
+                  другой угол.
                 </p>
               </div>
               <div class="card__controls">
-                <button class="card__icon-button" aria-labelledby="like-button">
+                <button class="card__icon-button">
                   <svg
                     class="like-icon"
-                    widht="39"
+                    width="39"
                     height="36"
                     viewBox="0 0 39 36"
                     fill="none"
@@ -442,12 +447,12 @@
                       />
                       <path
                         class="main-body"
-                        fill="none"
+                        fill="transparent"
                         d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                       />
                       <path
                         class="core"
-                        fill="none"
+                        fill="transparent"
                         d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                       />
                     </g>
@@ -463,23 +468,23 @@
                   <span class="button__text">Like</span>
                 </button>
               </div>
-            </article>
+            </div>
           </li>
         </ul>
-      </section>
-      <section class="post-section">
+      </article>
+      <article class="post-section">
         <h2 class="post-title">3 спринт: Когда опускаются руки</h2>
         <ul class="post-content__list">
           <li class="post-content__item">
-            <article class="post-card">
+            <div class="post-card">
               <div class="post-card-container hue-animate">
-                <span class="label">&lt;/HTML&gt;</span>
+                <span class="label" aria-hidden="true">&lt;heart&gt;</span>
                 <img
                   class="images-card image-card-seventh"
                   src="images/heart.jpg"
                   alt="Красный декоративный светильник в виде сердца выполненный в стиле майнкрафт стоящий на деревянном столе"
                   loading="lazy"
-                />
+                >
               </div>
               <div class="card-text-content">
                 <p class="card-text-content__paragraph">
@@ -490,14 +495,14 @@
                   Вспомните, откуда вы её черпали.
                 </p>
                 <p class="card-text-content__paragraph">
-                 Семья- так много в этом слове...
+                  Семья- так много в этом слове...
                 </p>
               </div>
               <div class="card__controls">
-                <button class="card__icon-button" aria-labelledby="like-button">
+                <button class="card__icon-button">
                   <svg
                     class="like-icon"
-                    widht="39"
+                    width="39"
                     height="36"
                     viewBox="0 0 39 36"
                     fill="none"
@@ -511,12 +516,12 @@
                       />
                       <path
                         class="main-body"
-                        fill="none"
+                        fill="transparent"
                         d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                       />
                       <path
                         class="core"
-                        fill="none"
+                        fill="transparent"
                         d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                       />
                     </g>
@@ -532,23 +537,25 @@
                   <span class="button__text">Like</span>
                 </button>
               </div>
-            </article>
+            </div>
           </li>
         </ul>
-      </section>
-      <section class="post-section">
+      </article>
+      <article class="post-section">
         <h2 class="post-title">«Сейчас я здесь»</h2>
         <ul class="post-content__list">
           <li class="post-content__item">
-            <article class="post-card">
+            <div class="post-card">
               <div class="post-card-container hue-animate">
-                <span class="label">&lt;/HTML&gt;</span>
+                <span class="label" aria-hidden="true"
+                  >&lt;I'm a miracle&gt;</span
+                >
                 <img
                   class="images-card image-card-eighth"
                   src="images/heart.jpg"
                   alt="Красный декоративный светильник в виде сердца выполненный в стиле майнкрафт стоящий на деревянном столе"
                   loading="lazy"
-                />
+                >
               </div>
               <div class="card-text-content">
                 <p class="card-text-content__paragraph">
@@ -561,14 +568,14 @@
                   есть результат.
                 </p>
                 <p class="card-text-content__paragraph">
-                И этот путь будет моей вершиной успеха.
+                  И этот путь будет моей вершиной успеха.
                 </p>
               </div>
               <div class="card__controls">
-                <button class="card__icon-button" aria-labelledby="like-button">
+                <button class="card__icon-button">
                   <svg
                     class="like-icon"
-                    widht="39"
+                    width="39"
                     height="36"
                     viewBox="0 0 39 36"
                     fill="none"
@@ -582,12 +589,12 @@
                       />
                       <path
                         class="main-body"
-                        fill="none"
+                        fill="transparent"
                         d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                       />
                       <path
                         class="core"
-                        fill="none"
+                        fill="transparent"
                         d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                       />
                     </g>
@@ -603,10 +610,10 @@
                   <span class="button__text">Like</span>
                 </button>
               </div>
-            </article>
+            </div>
           </li>
         </ul>
-      </section>
+      </article>
     </main>
     <footer class="footer">
       <button
@@ -615,31 +622,8 @@
         onclick="window['dialog-id'].showModal();"
         aria-controls="dialog-id"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          symbol
-          id="floppy"
-          class="floppy__class"
-          width="21"
-          height="21"
-          fill="currentColor"
-        >
-          <path
-            fill="var(--floppy-button)"
-            d="M0 0h1.615v1.615H0zM0 1.615h1.615V3.23H0zM0 3.231h1.615v1.615H0zM0 4.846h1.615v1.615H0zM0 6.461h1.615v1.615H0zM0 8.077h1.615v1.615H0zM0 9.692h1.615v1.615H0zM0 11.308h1.615v1.615H0zM0 12.923h1.615v1.615H0zM0 14.539h1.615v1.615H0zM0 16.154h1.615v1.615H0zM0 17.769h1.615v1.615H0zM0 19.385h1.615V21H0zM17.77 0v1.615h-1.616V0zM16.154 0v1.615h-1.615V0zM14.539 0v1.615h-1.615V0zM12.923 0v1.615h-1.615V0zM11.308 0v1.615H9.693V0zM9.692 0v1.615H8.077V0zM8.077 0v1.615H6.462V0zM6.462 0v1.615H4.847V0zM4.846 0v1.615H3.231V0zM3.23 0v1.615H1.617V0zM19.385 1.616V3.23H17.77V1.616zM4.846 3.23v1.616H3.231V3.23zM4.846 1.615V3.23H3.231V1.615zM4.846 4.846v1.615H3.231V4.846zM16.154 3.231v1.615h-1.615V3.231zM16.154 1.615V3.23h-1.615V1.615zM16.154 4.846v1.615h-1.615V4.846zM12.923 3.23v1.616h-1.615V3.23zM12.923 1.615V3.23h-1.615V1.615zM12.923 4.846v1.615h-1.615V4.846zM16.154 6.462v1.615H14.54V6.462zM14.539 6.462v1.615h-1.615V6.462zM12.924 6.461v1.615h-1.615V6.461zM11.308 6.462v1.615H9.693V6.462zM9.693 6.461v1.615H8.078V6.461zM8.077 6.462v1.615H6.462V6.462zM6.462 6.462v1.615H4.847V6.462zM4.847 6.461v1.615H3.232V6.461zM17.769 11.307v1.615h-1.615v-1.615zM16.153 11.308v1.615h-1.615v-1.615z"
-          />
-          <path
-            fill="var(--floppy-button)"
-            d="M14.538 11.308v1.615h-1.615v-1.615zM12.923 11.307v1.615h-1.615v-1.615zM11.307 11.308v1.615H9.692v-1.615zM9.692 11.307v1.615H8.077v-1.615zM8.076 11.308v1.615H6.461v-1.615zM6.461 11.308v1.615H4.846v-1.615zM4.846 11.307v1.615H3.23v-1.615zM17.77 12.923v1.615h-1.616v-1.615zM4.846 12.923v1.615H3.231v-1.615z"
-          />
-          <path
-            fill="var(--floppy-button)"
-            d="M17.769 14.538v1.615h-1.615v-1.615zM4.846 14.538v1.615H3.23v-1.615zM17.77 16.153v1.615h-1.616v-1.615zM4.846 16.154v1.615H3.231v-1.615zM4.846 17.769v1.615H3.231v-1.615zM17.77 17.769v1.615h-1.616v-1.615zM19.384 19.385V21H17.77v-1.615zM17.77 19.384V21h-1.616v-1.615zM16.154 19.385V21h-1.615v-1.615zM14.538 19.385V21h-1.615v-1.615zM12.923 19.385V21h-1.615v-1.615zM11.307 19.385V21H9.692v-1.615zM9.692 19.385V21H8.077v-1.615zM8.077 19.385V21H6.462v-1.615zM6.461 19.385V21H4.846v-1.615zM4.846 19.385V21H3.231v-1.615zM3.23 19.385V21H1.617v-1.615zM21 21h-1.615v-1.615H21zM21 19.385h-1.615V17.77H21zM21 17.769h-1.615v-1.615H21zM21 16.154h-1.615v-1.615H21zM21 14.538h-1.615v-1.615H21zM21 12.923h-1.615v-1.615H21zM21 11.307h-1.615V9.692H21z"
-          />
-          <path
-            fill="var(--floppy-button)"
-            d="M21 9.693h-1.615V8.078H21zM21 8.077h-1.615V6.462H21zM21 6.462h-1.615V4.847H21zM21 4.846h-1.615V3.231H21z"
-          />
+        <svg class="button__disk" width="40" height="40" viewBox="0 0 40 40">
+          <use href="./svg/floppy.svg#disk"></use>
         </svg>
 
         <span class="button__text">сохранить на память</span>
@@ -647,11 +631,11 @@
     </footer>
     <dialog class="dialog" id="dialog-id">
       <div class="dialog__container">
-        <svg class="floppy" viewBox="00 29 28" aria-hidden="true">
-          <use href="/svg/floppy.svg#floppy"></use>
+        <svg class="dialog__disk" width="40" height="40" viewBox="0 0 40 40">
+          <use href="./svg/floppy.svg#disk"></use>
         </svg>
         <p class="dialog__text">
-          Вставьте<br />
+          Вставьте<br>
           дискету, чтобы продолжить
         </p>
       </div>
@@ -664,34 +648,3 @@
     <script src="./scripts/like.js"></script>
   </body>
 </html>
-
-<!-- ТЕМИЗИРОВАННЫЙ ФАВИКОН 
- <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" fill="none">
-  <style>
-    :root {
-      --favicon-color: #000000;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --favicon-color: #00cc14;
-      }
-
-      @media (prefers-color-scheme: light) {
-        :root {
-          --favicon-color: #000000;
-        }
-      }
-    }
-  </style>
-  <path
-    fill="#000"
-    d="M128 128h32v32h-32v-32ZM96 128V96h32v32H96ZM96 128v32H64v-32h32ZM192 64h-32v32h32V64Z"
-  />
-  <path
-    fill="#000"
-    fill-rule="evenodd"
-    d="M0 0v256h256V0H0Zm224 224h-64v-32h32v-32h32v64Zm-64-64h32v-32h32V32H32v128h32v32H32v32h96v-32h32v-32Z"
-    clip-rule="evenodd"
-  />
-</svg>-->

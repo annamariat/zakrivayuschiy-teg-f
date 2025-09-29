@@ -18,7 +18,7 @@
   min-block-size: 100dvb;
   margin-block: 0;
   background-color: var(--themes-mainColor, #ffffff);
-  color: var(---accent-color, #000000);
+  color: var(--accent-color, #000000);
   background-image: var(--background-image, none);
   background-attachment: fixed;
   background-size: cover;
@@ -28,41 +28,17 @@
   font-family: var(--accent-font-PressStart2P);
   position: relative;
   z-index: 0;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  gap: 25px;
   justify-items: center;
   border: 2px solid var(--accent-color, #000000);
   background-color: var(--themes-mainColor, #ffffff);
-  /*font-size: использовать clamp?*/
-  inline-size: 700px;
-  block-size: 368px;
   margin-block-start: 100px;
   margin-block-end: 102px;
-  /*padding отступы в шапке используйте clamp?*/
+  padding-bottom: 25px;
+  padding-top: var(--header-padding-top-size, 120px);
 }
 
 .page__section {
-  max-inline-size: var(--header-inline-desktop, 100%);
-}
-
-@media (width<=375px) {
-  /*на мобильном устройстве растените их на вс ширину
-  для реализации этой ширины удобно внедрить дополнительный класс
-  а размер вынести в перемнную!*/
-  .page__section {
-    inline-size: var(--header-inline-mobile, 50%);
-  }
-}
-
-.page__header {
-  max-inline-size: var(--header-inline-desktop, 100%);
-}
-
-@media (width<=375px) {
-  .page__header {
-    max-inline-size: var(--header-inline-desktop, 100%);
-  }
+  inline-size: var(--section-inline-size, 100%);
 }
 
 .logo-group {
@@ -73,34 +49,29 @@
   gap: 20px;
   color: var(--accent-color, #000000);
   text-transform: uppercase;
-  margin-block-start: 136px;
-  padding: 0 5vi;
-}
-
-.header__logo {
-  /*font-size: использовать clamp?*/
-  font-weight: var(--card-header-thickness, 700);
-  line-height: 100%;
-  font-size: 65px;
+  margin-bottom: 25px;
 }
 
 .header__title {
-  /*font-size: использовать clamp? var(--title-size-mobile: clamp()*/
-  font-size: 23px;
-  line-height: 100%;
   font-weight: var(--card-header-thickness, 700);
+  line-height: 100%;
+  font-size: var(--title-font-size, 49px);
 }
 
-@media (width<=375px) {
-  .header__title {
-    font-size: var(--title-size-mobile, clamp());
-  }
+.header__subtitle {
+  font-weight: var(--card-header-thickness, 700);
+  line-height: 100%;
+  font-size: var(--header__subtitle, 14px);
+}
+
+.header__theme-menu {
+  margin-inline-start: 315px;
+  margin-inline-end: 297px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  text-align: center;
   gap: 10px;
 }
 
@@ -110,7 +81,7 @@
   color: var(--accent-color, #000000);
   background-color: transparent;
   cursor: var(--cursor, auto);
-  user-select: none; /*можно нажать но выделение текста нежелательно*/
+  user-select: none;
   text-transform: uppercase;
   border: none;
   font-size: 14px;
@@ -119,7 +90,6 @@
 }
 
 .theme-menu__button:hover {
-  /*ПРИ НАВЕДЕНИИ КУРСОРА МЕНЯЕТСЯ ЦВЕТ*/
   opacity: 0.6;
   transition: opacity 0.3s ease;
 }
@@ -173,18 +143,7 @@
   animation-direction: alternate;
 }
 
-@keyframes rotatemove {
-  0% {
-    transform: translate(0);
-  }
-
-  100% {
-    transform: translate(4px);
-  }
-}
-
 /*main*/
-
 .content {
   display: grid;
   gap: 54px;
@@ -195,7 +154,7 @@
   background-color: var(--themes-mainColor, #ffffff);
   border: 2px solid var(--accent-color, #000000);
   grid-template-rows: min-content 1fr 1fr;
-  max-inline-size: 696px; /*при изменении на просто инлайн сайз не меняется картинка*/
+  max-inline-size: 696px;
 }
 
 .post-title {
@@ -212,18 +171,6 @@
   min-height: 371px;
 }
 
-.post-card {
-  /*font-size: использовать clamp или относительные ед.изм.?*/
-}
-
-@media (width<=375px) {
-  .post-card {
-    /*font-size: использовать clamp или относительные ед.изм.?*/
-  }
-  /*font-size: использовать clamp или относительные ед.изм.?*/
-  /*нужен доп.класс для реализации ширины а размер вынести в переменную?*/
-}
-
 .post-card-container {
   position: relative;
   overflow: hidden;
@@ -238,9 +185,9 @@
   text-transform: uppercase;
   top: 25px;
   right: 25px;
-  color: var(--accent-color, #000000);
+  color: var(--color-mixing, #000000);
+  mix-blend-mode: normal;
   opacity: 50%;
-  mix-blend-mode: hard-light;
   text-shadow: -1px 0 var(--text-stroke-color, #ffffff),
     0 1px var(--text-stroke-color, #ffffff),
     1px 0 var(--text-stroke-color, #ffffff),
@@ -263,7 +210,6 @@
   block-size: 100%;
   object-fit: cover;
   object-position: center;
-  border-bottom: 2px solid var(--accent-color, #000000);
 }
 
 .image-card-second {
@@ -303,35 +249,57 @@
   flex-wrap: wrap;
   gap: 27px;
   padding: 25px 25px 25px 25px;
+  border-top: 2px solid var(--accent-color, #000000);
 }
 
 .card-text-content__paragraph {
   font-family: var(--main-font-Inter, Inter, sans-serif);
   font-weight: var(--thickness-main-text, 400);
-
   color: var(--accent-color, #000000);
   font-size: 18px;
   line-height: 21px;
 }
 
 .button {
-  /*Общая кнопок Like  Сохранить и Ok в теге <dialog> */
+  position: relative;
   font-family: var(--accent-font-PressStart2P, Lato);
   font-weight: var(--thickness-main-tex, 400);
   font-size: 14px;
   line-height: 90%;
   background-color: transparent;
-  border: none;
-  padding: 0;
   cursor: var(--cursor, auto);
+  border: 2px solid var(--accent-color, #000000);
+}
+
+.button__text {
+  color: var(--button-text-color, #ffffff);
+  mix-blend-mode: difference;
+}
+
+.button__text::first-letter {
+  text-transform: uppercase;
+}
+
+.button::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: var(--button-text-color);
+  transition: transform 0.5s ease-in-out;
+  transform: translate(-100%);
+  mix-blend-mode: difference;
+}
+
+.button:hover::before {
+  transform: scale(1.1);
 }
 
 /*Кнопка Like + svg */
 .card__controls {
   display: flex;
-  align-items: flex-start;
   justify-content: flex-end;
-  gap: 3px;
+  align-items: center;
+  gap: 5px;
   margin-inline-end: 25px;
   margin-block-end: 25px;
 }
@@ -339,7 +307,7 @@
 .card__icon-button {
   background-color: transparent;
   border: none;
-  block-size: 38px;
+  block-size: 35px;
   padding: 0;
   cursor: var(--cursor, auto);
 }
@@ -349,18 +317,15 @@
 }
 
 .card__icon-button:focus-visible {
-  border: 2px solid var(--accent-color, #000000);
+  outline: 2px solid var(--accent-color, #000000);
 }
 
 .card__like-button {
   position: relative;
   overflow: hidden;
-  background-color: transparent;
   inline-size: 130px;
   block-size: 38px;
-  border: 2px solid var(--accent-color, #000000);
   padding: 0;
-  cursor: pointer;
 }
 
 .card__like-button:focus {
@@ -373,57 +338,24 @@
   transition: box-shadow 0.5s ease-in-out;
 }
 
-/*Общие стили на текста Like  Сохранить и Ok в теге <dialog> */
-.button__text {
-  font-family: var(--accent-font-PressStart2P, Lato);
-  font-weight: var(--thickness-main-tex, 400);
-  font-size: 14px;
-  line-height: 90%;
-  background-color: transparent;
-  color: var(--color-text, #000000);
-  cursor: var(--cursor, auto);
-}
-
-.button__text::first-letter {
-  text-transform: uppercase;
-}
-
-.button__text::before {
-  position: absolute;
-  content: "";
-  inset: 0;
-  background-color: var(--color-mixing, #ffffff);
-  transition: transform 0.5s ease-in-out;
-  transform: translate(-100%);
-  mix-blend-mode: difference;
-}
-
-.button__text:hover::before {
-  transform: scale(1.1);
-}
-
 /*Анимация сердечка*/
 .sparks {
   opacity: 0;
 }
 
 /*hover*/
-.core:hover {
+.like-icon:hover .core {
+  fill: var(--countour-svg, #000000);
+  transition-property: fill;
+  transition-duration: 0.03s;
+  transition-timing-function: linear;
+}
+
+.like-icon:hover .main-body {
   fill: var(--countour-svg, #000000);
   transition-property: fill;
   transition-duration: 0.3s;
   transition-timing-function: linear;
-}
-
-.like-icon:hover .core {
-  fill: var(--countour-svg, #000000);
-  transition-property: fill;
-  transition-delay: 0.03s;
-  transition-timing-function: linear;
-}
-
-.main-body {
-  fill: transparent;
 }
 
 .main-body:hover {
@@ -431,12 +363,6 @@
   transition-property: fill;
   transition-duration: 0.3s;
   transition-delay: 0.05s;
-  transition-timing-function: linear;
-}
-.like-icon:hover.main-body {
-  fill: var(--countour-svg, #000000);
-  transition-property: fill;
-  transition-duration: 0.3s;
   transition-timing-function: linear;
 }
 
@@ -453,10 +379,6 @@
   transition-property: fill;
   transition-delay: 0.03s;
   transition-timing-function: linear;
-}
-
-.main-body {
-  fill: transparent;
 }
 
 .main-body:active {
@@ -498,17 +420,11 @@
   transition-delay: 0.06s;
 }
 
-/*Как вернуть контур черненький */
 .contour.is-liked {
   fill: var(--countour-svg, #000000);
   transition-property: fill;
   transition-duration: 0.1s;
   transition-timing-function: linear;
-}
-
-/*Как вернуть черненкий контур*/
-.like-icon {
-  fill: var(--countour-svg, #000000);
 }
 
 /*Происходит небольшое масштабирование сердца и возврат к исходному состоянию*/
@@ -535,7 +451,6 @@
 }
 
 /*footer*/
-
 .footer {
   display: flex;
   justify-content: center;
@@ -546,7 +461,6 @@
 .card__save-button {
   position: relative;
   overflow: hidden;
-  cursor: pointer;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -558,9 +472,8 @@
   background-color: var(--themes-mainColor, #ffffff);
 }
 
-@media (width<=375px) {
+@media (width<=400px) {
   .card__save-button {
-    display: flex;
     flex-direction: column;
     inline-size: 306px;
     block-size: 84px;
@@ -577,18 +490,19 @@
   transition: box-shadow 0.5s ease-in-out;
 }
 
-.floppy__svg {
-  border: none;
+.button__disk {
+  max-inline-size: 21px;
+  color: var(--button-text-color, #ffffff);
+  mix-blend-mode: difference;
 }
 
-.floppy__svg:focus {
-  background-color: transparent;
-  border: none;
-  outline: none;
+@media (width <= 375px) {
+  .button__disk {
+    max-inline-size: 28px;
+  }
 }
 
 /*ДИАЛОГ*/
-
 dialog {
   position: fixed;
   inset: 0;
@@ -596,6 +510,7 @@ dialog {
   align-items: center;
   gap: 30px;
   border-width: 1px;
+  color: var(--accent-color, #000000);
   transition: opacity 0.3s ease-in-out;
   inline-size: 353px;
   block-size: 191px;
@@ -615,14 +530,26 @@ dialog:not([open]) {
   pointer-events: none;
 }
 
+.dialog__container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialog__disk {
+  min-inline-size: 39px;
+  color: var(--button-text-color, #ffffff);
+  mix-blend-mode: difference;
+}
+
 .dialog::backdrop {
   background-color: var(--dialog-backdrop, #000000);
-  opacity: 0.75;
+  opacity: 75%;
 }
 
 .dialog__text {
   color: var(--color-text, #000000);
-  font-family: var(--accent-font-PressStart2P);
+  font-family: var(--accent-font-PressStart2P, Lato);
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;

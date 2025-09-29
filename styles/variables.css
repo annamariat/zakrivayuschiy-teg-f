@@ -4,10 +4,10 @@
   --main-font-Inter: Inter; /*вариативный шрифт*/
   --accent-font-PressStart2P: PressStart2P;
   --cursor: url(../images/cursor.png), auto;
-  --title-size-mobile: clamp();
-  --title-size-desktop: clamp();
-  --header-inline-mobile: 50%;
-  --header-inline-desktop: 100%;
+  --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header__subtitle: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --section-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  --header-padding-top-size: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   --themes-mainColor: #ffffff;
   --accent-color: #000000;
   --background-image: repeating-linear-gradient(
@@ -17,7 +17,7 @@
     ),
     repeating-linear-gradient(to top, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to top, #e7e7e7 0.01%, #1a1a1a);
-  --color-mixing: #ffffff;
+  --color-mixing: #000000;
   --color-text: #000000; /*цвет текста*/
   --countour-svg: #000000; /*ЦВЕТ КОНТУРА ВЫНЕСИТЕ В ПЕРЕМЕННУ ПОТОМУ ЧТО ОН МЕНЯЕТСЯ В СВЕТЛОЙ И ТЕМНОЙ ТЕМАХ*/
   --filling-svg: #ff0000; /*ЦВЕТ ЗАЛИВКИ SVG ОН ОДИН ДЛЯ ВСЕХ*/
@@ -29,4 +29,5 @@
   --text-stroke-color: #ffffff;
   --dialog-backdrop: #000000;
   --favicon-color: #000000;
+  --button-text-color: #ffffff;
 }
